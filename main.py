@@ -1,11 +1,18 @@
 from tkinter import *
 from math import sin, cos
 
+import webbrowser
+import os
+
 size = 800
 
 tk = Tk()
+tk.title("Star System Explorer")
 c = Canvas(tk, width=size, height=size, bg="#000000")
 c.pack()
+
+# File path
+path = os.path.dirname(os.path.realpath(__file__))
 
 # 24:15:9:6:4:3:2 orbital resonance, starting at b
 
@@ -135,6 +142,12 @@ def toggle_labels():
     global labels
     labels = not labels
 
+def music_off():
+    webbrowser.open(path+"/silence.wav")
+
+def music_on():
+    webbrowser.open(path+"/music.mp3")
+
 sdown = Button(tk, text="Slow Down", command=speeddown)
 sdown.place(anchor=NW, x=5, y=5)
 sup = Button(tk, text="Speed Up", command=speedup)
@@ -143,6 +156,17 @@ clab = Button(tk, text="Toggle Kepler/TRAPPIST Labels", command=change_labels)
 clab.place(anchor=NW, x=5, y=65)
 tlab = Button(tk, text="Toggle Labels", command=toggle_labels)
 tlab.place(anchor=NW, x=5, y=95)
+
+# Play Music
+
+webbrowser.open(path+"/music.mp3")
+
+# Music Buttons
+
+musoff = Button(tk, text="Turn Music Off", command=music_off)
+musoff.place(anchor=SW, x=5, y=size-35)
+muson = Button(tk, text="Turn Music On", command=music_on)
+muson.place(anchor=SW, x=5, y=size-5)
 
 while True:
     c.delete("all")
