@@ -31,3 +31,5 @@ TRAPPIST-1g
 
 TRAPPIST-1h
     An icy planet at the edge of the TRAPPIST-1 system.
+
+The planets are locked in a 24:15:9:6:4:3:2 orbital resonance.
