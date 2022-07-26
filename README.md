@@ -2,6 +2,8 @@
 
 There's no exploration yet. JWST WHY...
 
+Once the JWST can take images of some of these planets, I'm going to update this.
+
 ## Star Systems
 
 ### TRAPPIST-1/K2-112
