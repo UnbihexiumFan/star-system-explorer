@@ -1,6 +1,6 @@
 # Star System Explorer
 
-There's no exploration yet. JWST WHY...
+There's no exploration yet. JWST is gonna have to take some images, I guess...
 
 Once the JWST can take images of some of these planets, I'm going to update this.
 
